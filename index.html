@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arjun's Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/new_style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Hello, I'm Arjun</h1>
-      <p>A passionate Software Engineer specializing in Data Science and NLP.</p>
-    </div>
-  </header>
-
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I hold a Master of Computer Application and work as a Software Engineer with a focus on Data Science, NLP, and chatbots.</p>
-  </section>
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <img src="img/search.png" alt="Project 1">
-          <h3>Project Title 1</h3>
-          <p>Get the movie recomanddation on the basis of your search!!!</p>
-          <a href="https://github.com/codeasarjun/MovieMingle/">Have a look</a>
-        </div>
-        <div class="carousel-item">
-          <img src="img/prj1.png" alt="Project 2">
-          <h3>TextSummary</h3>
-          <p>Get an accurate summary of your data</p>
-          <a href="https://github.com/codeasarjun/Textsummary">Have a look</a>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
         
-      </div>
-      <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-      <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-    </div>
-  </section>
-
-  
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Reach out to me at <a href="mailto:your.email@example.com">will udpate soon</a>.</p>
-  </section>
-
-  <script src="js/slide.js"></script>
-  
-
-  <footer>
-    <p>© 2024 Arjun</p>
-  </footer>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm Arjun, a Software Engineer based in India. I have a passion for AI/ML and specialize in data science.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, JavaScript, Java, SQL</li>
+                <li><strong>Frameworks & Libraries:</strong>Flask, FastAPI, TensorFlow, LangChain, HuggingFace</li>
+                <li><strong>Tools:</strong>Git, Docker, Postman</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>MovieMingle</h3>
+                <p><strong>Description:</strong> Get movie recommendations based on the searched movie</p>
+                <p><strong>Technologies Used:</strong> Flask, Pandas, Sklearn, TFIdf</p>
+                <a href="https://github.com/codeasarjun/MovieMingle" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>ResuMinds</h3>
+                <p><strong>Description:</strong>Resume parser, a simple tool to give insights of candidates resumes in few clicks.</p>
+                <p><strong>Technologies Used:</strong> Python, Flask</p>
+                <a href="https://github.com/codeasarjun/ResuMinds" target="_blank">View Project</a>
+            </div>
+            
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Degree:</strong> MCA</p>
+            <p><strong>Year of Graduation:</strong> [2023]</p>
+            <p><strong>Relevant Coursework:</strong> [Python, Machine Learning, NLP, Mathematical, Statistics]</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Software Engineer</h3>
+                <p><strong>Dates:</strong> [Aug 2023 –]</p>
+            </div>
+            <div class="experience">
+                <h3>Intern</h3>
+                <p><strong>Dates:</strong> [Feb 2023 – Aug 2023]</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Arjun. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
